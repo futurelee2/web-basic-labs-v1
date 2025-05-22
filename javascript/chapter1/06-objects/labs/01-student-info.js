@@ -3,6 +3,9 @@
 
 const student = {
   // 여기에 name, age, major 추가
+  name: "이미래",
+  age: 15,
+  major: "의패",
 };
 
 // 예시 출력:

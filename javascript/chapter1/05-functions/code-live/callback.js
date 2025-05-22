@@ -13,3 +13,18 @@ greet("이미래", greetKorean);
 greet("mirae lee", (name) => {
   console.log(`hello, ${name} !`);
 });
+
+//비동기처리에서의 콜백
+
+//loginUser 가 고차함수
+function loginUser(name, callback) {
+  console.log(`${name}님 로그인중...`);
+  setTimeout(() => {
+    console.log("로긘 완료");
+    callback(name);
+  }, 2000); // 2초 후?
+}
+
+loginUser("이미래", (name) => {
+  console.log(`${name}님 반갑`);
+});
