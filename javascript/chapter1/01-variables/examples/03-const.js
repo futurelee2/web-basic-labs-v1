@@ -6,7 +6,7 @@ console.log("PI:", PI);
 
 // PI = 3.1415; // ❌ Error: 재할당 불가
 
-const user = { name: "수지", age: 30 };
+const user = { name: "수지", age: 30 }; // 자바에서 객체는 <- 이런 형태
 user.age = 31; // 객체 속성은 수정 가능
 console.log("수정된 유저:", user);
 
