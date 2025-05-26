@@ -9,3 +9,6 @@ const products = [
 ];
 
 // TODO: sort 사용 (price 기준 오름차순)
+
+products.sort((p1, p2) => p1.price - p2.price); // sort 정렬할때는 음수,0, 양수 기준으로 만들어줘야함
+console.log(products);

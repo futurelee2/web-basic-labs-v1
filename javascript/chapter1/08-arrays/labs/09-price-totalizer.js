@@ -9,3 +9,10 @@ const cart = [
 ];
 
 // TODO: reduce로 총합 계산
+// for (i = 0; i < cart.length; i++) {
+//   let keyPrice = cart[i].price;
+//   cart.reduce((sum, keyPrice) => sum + keyPrice, 0);
+// }
+
+let sumprice = cart.reduce((sum, item) => sum + item.price, 0);
+console.log(sumprice);
