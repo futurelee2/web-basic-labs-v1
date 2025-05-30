@@ -17,3 +17,9 @@ console.log(nums.reduce((acc, cur) => acc + cur, 0));
 console.log(nums.sort()); // 기본적인 오름차순 아니면, 콜백으로 정렬 기준 넣어줘야함
 console.log(nums.sort((a, b) => a - b));
 console.log(nums.sort((a, b) => a + b));
+
+console.log([10, 2, 1].sort());
+// 결과: [1, 10, 2]
+
+console.log(nums.sort((a, b) => a - b)); //오름차순
+console.log(nums.sort((a, b) => b - a)); //내림차순

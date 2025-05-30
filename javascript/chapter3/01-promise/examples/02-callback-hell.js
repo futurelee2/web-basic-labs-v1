@@ -12,7 +12,7 @@ function getCommentsByPost(post, callback) {
   setTimeout(() => callback(null, [`${post}에 댓글1`, `${post}에 댓글2`]), 500);
 }
 
-// 중첩되는 콜백 지옥 구조
+// 중첩되는 콜백 지옥 구조 => 복잡함. 프로미스가 나온 이유
 getUser(1, (err, user) => {
   if (err) return console.error(err);
   getPostsByUser(user, (err, posts) => {

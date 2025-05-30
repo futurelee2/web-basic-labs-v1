@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="loginForm">
+      <input type="text" />
+      <button>로긘</button>
+    </form>
+
+    <script>
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", (event) => {
+          event.preventDefault(); // 페이지 새로고침 방지
+          console.log("제출완룡");
+        });
+    </script>
+  </body>
+</html>

@@ -10,6 +10,7 @@
     <script>
       const form = document.getElementById("joinForm");
       const error = document.getElementById("error");
+      // 검증을 프론트, 백엔드 같이 해줘야 안전함
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         const email = document.getElementById("email").value.trim();
