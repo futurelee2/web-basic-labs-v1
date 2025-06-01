@@ -22,3 +22,12 @@ for (i = 0; i <= numbers.length; i++) {
   }
 }
 console.log("min", min);
+
+let numArray1 = [...numbers].sort((a, b) => a - b);
+let numArray2 = [...numbers].sort((a, b) => b - a);
+
+console.log(numArray1);
+console.log(numArray2);
+
+console.log("array_max", numArray2[0]);
+console.log("array_min", numArray2[numArray1.length - 1]);

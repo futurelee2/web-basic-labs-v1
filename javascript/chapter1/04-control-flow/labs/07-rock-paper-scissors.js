@@ -20,7 +20,6 @@
 Math.random() - 난수 생성 함수
 */
 
-<<<<<<< HEAD
 // 0 가위 1 바위 2 보
 
 let count = 1;
@@ -72,7 +71,6 @@ while (count < 4) {
     }
   }
   count++;
-=======
 let input;
 let userWinCount = 0;
 let comWinCount = 0;
@@ -116,5 +114,4 @@ if (comWinCount == 2) {
 
 if (userWinCount == 2) {
   alert("당신이 이겼습니다");
->>>>>>> 86cc0390c5219ccbe973758fd5b25f1163feeb97
 }

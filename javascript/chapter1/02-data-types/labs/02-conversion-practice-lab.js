@@ -4,6 +4,8 @@ console.log(Number("10")); // 10
 console.log(Number("hi")); // NaN
 console.log(String(999)); // 999
 console.log(Boolean("")); // f
+console.log(Boolean(" ")); // t
 console.log(Boolean("JavaScript")); // t
 console.log(Boolean(0)); // f
+console.log(Boolean(1)); // t
 console.log(Boolean(undefined)); // f

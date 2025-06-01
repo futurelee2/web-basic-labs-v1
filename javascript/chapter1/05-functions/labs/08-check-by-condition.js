@@ -8,10 +8,10 @@ function checkByCondition(num, callback) {
   return callback(num);
 }
 
-console.log(checkByCondition(2, (num) => num % 2 == 0));
-console.log(checkByCondition(2, (num) => num > 10));
-console.log(checkByCondition(2, (num) => num % 3 == 0));
-
 // 1) 짝수인지 검사
 // 2) 10보다 큰지 검사
 // 3) 3의 배수인지 검사
+
+console.log(checkByCondition(2, (num) => num % 2 == 0));
+console.log(checkByCondition(2, (num) => num > 10));
+console.log(checkByCondition(2, (num) => num % 3 == 0));

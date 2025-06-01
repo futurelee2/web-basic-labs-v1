@@ -4,7 +4,6 @@
 - 대문자 1개 이상
 - 숫자 1개 이상
 - 특수문자 1개 이상 (!@#$%^&*)
-<<<<<<< HEAD
 */
 
 let uppercheck = false;
@@ -53,35 +52,3 @@ if (!numcheck) {
 // if (isStrong) {
 //   console.log("강한비밀번호 입니다.");
 // }
-=======
- regex - 정규식
- - !/[A-Z]/.test(password)
-*/
-
-let password = prompt("비밀번호를 입력하세요");
-let isStrong = true;
-
-if (password.length < 8) {
-  alert("길이가 8자 미만입니다.");
-  isStrong = false;
-}
-
-if (!/[A-Z]/.test(password)) {
-  alert("대문자가 1개 이상이어야 합니다. ");
-  isStrong = false;
-}
-
-if (!/[0-9]/.test(password)) {
-  alert("숫자가 1개 이상이어야 합니다. ");
-  isStrong = false;
-}
-
-if (!/[!@#$%^&*]/.test(password)) {
-  alert("특수문자 1개 이상이어야 합니다. ");
-  isStrong = false;
-}
-
-if (isStrong) {
-  alert("강한 비밀번호입니다!");
-}
->>>>>>> 86cc0390c5219ccbe973758fd5b25f1163feeb97
