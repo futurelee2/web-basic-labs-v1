@@ -9,6 +9,23 @@
     <p id="msg"></p>
     <script>
       // TODO: submit에서 값 검사, 에러/성공 메시지 DOM에 출력
+      const form = document.getElementById("loginForm");
+      const id = document.getElementById("id");
+      const pw = document.getElementById("pw");
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (id.value.trim() == "") {
+          msg.textContent = "아이디는 비워둘 수 없습니다.";
+          return; // 함수종료
+        }
+        if (pw.value.trim() == "") {
+          msg.textContent = "비밀번호는 비워둘 수 없습니다.";
+          return;
+        }
+        msg.textContent = "로그인 성공"; // 위 if 문들 통과 시
+      });
     </script>
   </body>
 </html>

@@ -15,35 +15,23 @@
 
     <script>
       const input = document.getElementById("todoInput");
-      const addBtn = document.getElementById("addBtn");
-      const todoList = document.getElementById("todoList");
+      const btn = document.getElementById("addBtn");
+      const list = document.getElementById("todoList");
 
-      addBtn.addEventListener("click", () => {
-        const text = input.value.trim();
-        if (text === "") return;
-
-        const li = document.createElement("li");
-        li.innerHTML = `
-      <span class="todo-text">${text}</span>
-      <button>✅</button>
-      <button>❌</button>
-    `;
-        todoList.appendChild(li);
+      btn.addEventListener("click", (e) => {
+        list.innerHTML += `<li>${input.value}
+          <button>✅</button>
+          <button>❌</button>
+          </li>
+        `;
         input.value = "";
       });
-
-      todoList.addEventListener("click", (e) => {
-        if (e.target.tagName !== "BUTTON") return;
-
-        const li = e.target.closest("li");
-        const textEl = li.querySelector(".todo-text");
-
-        if (e.target.textContent === "✅") {
-          textEl.classList.toggle("done");
-        }
-
-        if (e.target.textContent === "❌") {
-          li.remove();
+      list.addEventListener("click", (e) => {
+        const litag = e.target.parentElement;
+        if (e.target.textContent == "✅") {
+          litag.classList.toggle("done");
+        } else {
+          litag.remove();
         }
       });
     </script>

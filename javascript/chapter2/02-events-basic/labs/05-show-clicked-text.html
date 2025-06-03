@@ -10,6 +10,29 @@
       // TODO: 카테고리 버튼을 누르면 해당 버튼의 텍스트를 alert로 보여주세요.
       // 각 버튼에 개별 이벤트 등록
       // 클릭 시 event.target.textContent를 alert로 출력
+      const btns = document.querySelectorAll(".categoryBtn");
+      // btn[0].addEventListener("click", () => {
+      //   if (btn[0].textContent == "👕 의류") {
+      //     alert("👕 의류");
+      //   }
+      // });
+      // btn[1].addEventListener("click", () => {
+      //   if (btn[1].textContent == "👟 신발") {
+      //     alert("👟 신발");
+      //   }
+      // });
+      // btn[2].addEventListener("click", () => {
+      //   if (btn[2].textContent == "🎒 가방") {
+      //     alert("🎒 가방");
+      //   }
+      // });
+
+      btns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          //console.log(e.target);
+          alert(e.target.textContent);
+        });
+      });
     </script>
   </body>
 </html>
