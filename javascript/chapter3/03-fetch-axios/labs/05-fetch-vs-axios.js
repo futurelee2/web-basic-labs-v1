@@ -7,3 +7,11 @@
 - 각각 결과 콘솔 출력
 - 차이점 주석으로 정리
 */
+
+import axios from "axios";
+
+const main = async () => {
+  const res = await axios.get("https://jsonplaceholder.typicode.com/todos/1");
+  const data = res.data;
+  console.log(data);
+};
