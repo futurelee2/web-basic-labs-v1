@@ -8,6 +8,19 @@
     <p id="output"></p>
     <script>
       // TODO: 체크 안 되어 있으면 제출 막고 메시지 출력
+      const form = document.querySelector("#agreeForm");
+      const chk = document.getElementById("chk");
+      const output = document.getElementById("output");
+      form.addEventListener("submit", (e) => {
+        // change 를 쓰게되면, 체크 박스를 체크할 때 마다 반응을 보고싶은 것
+        // submit 은 폼을 제출할 때 검사하고 싶은 것
+        e.preventDefault();
+        if (!chk.checked) {
+          output.textContent = "약관동의 항목을 체크해주세요.";
+        } else {
+          form.submit();
+        }
+      });
     </script>
   </body>
 </html>

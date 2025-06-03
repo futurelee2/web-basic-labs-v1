@@ -1,8 +1,7 @@
-/*
-[문제] 콜백을 Promise로 변환하기
+// [문제] 콜백을 Promise로 변환하기
 
-아래 함수는 콜백 방식으로 데이터를 받아오는 함수입니다.
-이 함수를 Promise 방식으로 재작성하세요.
+// 아래 함수는 콜백 방식으로 데이터를 받아오는 함수입니다.
+// 이 함수를 Promise 방식으로 재작성하세요.
 
 function fetchProduct(productId, callback) {
   setTimeout(() => {
@@ -22,7 +21,6 @@ fetchProduct(3, (err, product) => {
     console.log("상품 정보:", product);
   }
 });
-*/
 
 function fetchProduct(productId) {
   return new Promise((resolve, reject) => {

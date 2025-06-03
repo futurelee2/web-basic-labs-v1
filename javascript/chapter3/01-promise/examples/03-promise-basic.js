@@ -3,7 +3,7 @@ function getUserDataPromise(id) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (id === 1) {
-        resolve({ id: 1, name: "윤유저" });
+        resolve({ id: 1, name: "윤유저" }); // 이 값을 then에 전달해줌
       } else {
         reject("유저를 찾을 수 없습니다.");
       }
