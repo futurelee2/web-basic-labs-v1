@@ -11,6 +11,7 @@
     <script>
       // TODO: input, select 이벤트 시 info에 "이름 (부서)" 형태로 출력
       const input = document.getElementById("name");
+<<<<<<< HEAD
       const select = document.getElementById("dept");
       const info = document.getElementById("info");
       function updateInfo() {
@@ -23,6 +24,16 @@
 
       dept.addEventListener("change", updateInfo);
       input.addEventListener("input", updateInfo);
+=======
+      const dept = document.getElementById("dept");
+      const info = document.getElementById("info");
+      dept.addEventListener("change", (e) => {
+        const inputValue = input.value.trim();
+        if (inputValue != "" && e.target.value != "") {
+          info.textContent = `${inputValue} (${e.target.value})`;
+        }
+      });
+>>>>>>> 864c12f (fianl)
     </script>
   </body>
 </html>

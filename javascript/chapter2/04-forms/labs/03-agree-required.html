@@ -8,6 +8,7 @@
     <p id="output"></p>
     <script>
       // TODO: 체크 안 되어 있으면 제출 막고 메시지 출력
+<<<<<<< HEAD
       const form = document.querySelector("#agreeForm");
       const chk = document.getElementById("chk");
       const output = document.getElementById("output");
@@ -19,6 +20,18 @@
           output.textContent = "약관동의 항목을 체크해주세요.";
         } else {
           form.submit();
+=======
+      const agreeForm = document.getElementById("agreeForm");
+      const chk = document.getElementById("chk");
+      const output = document.getElementById("output");
+      agreeForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (!chk.checked) {
+          output.textContent = "약관 동의 체크 필수입니다.";
+        } else {
+          agreeForm.submit();
+          //(output.textContent = "제출완료");
+>>>>>>> 864c12f (fianl)
         }
       });
     </script>
